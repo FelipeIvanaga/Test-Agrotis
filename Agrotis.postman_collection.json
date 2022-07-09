@@ -1,0 +1,378 @@
+{
+	"info": {
+		"_postman_id": "7c1ca9ab-83cb-4b92-ad36-79a4837755db",
+		"name": "Agrotis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Propriedades",
+			"item": [
+				{
+					"name": "Listar propriedades",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propriedades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propriedades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar propriedade",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propriedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propriedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar propriedade",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Agrotis 1\",\n    \"cnpj\": \"52.865.338/0001-00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propriedades",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propriedades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar propriedade",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Agrotis novo nome\",\n\t\"inativo\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/propriedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propriedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativar propriedade",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/propriedades/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"propriedades",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Laboratorios",
+			"item": [
+				{
+					"name": "Listar laboratorios",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/laboratorios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar laboratorio",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/laboratorios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratorios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar laboratorio",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Agro Lab\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/laboratorios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratorios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar laboratorio",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"Agro Lab atualizado\",\n\t\"inativo\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/laboratorios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratorios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inativar laboratorio",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/laboratorios/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"laboratorios",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Licencas",
+			"item": [
+				{
+					"name": "Listar licencas",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/licencas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"licencas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar licenca",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/licencas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"licencas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar licenca",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"John Doe\",\n\t\"dataInicial\": \"2022-02-02T17:41:44Z\",\n\t\"dataFinal\": \"2022-02-02T17:41:44Z\",\n\t\"laboratorio\": {\n\t\t\"id\": 1,\n\t\t\"nome\": \"lab 1\"\n\t},\n\t\"infosPropriedade\": {\n\t\t\"nome\": \"Agrotis 1\",\n\t\t\"id\": 1\n\t},\n\t\"cnpj\": \"52.865.338/0001-00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/licencas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"licencas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar licenca",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nome\": \"John Doe\",\n\t\"dataInicial\": \"2022-02-02T17:41:44Z\",\n\t\"dataFinal\": \"2022-02-02T17:41:44Z\",\n\t\"laboratorio\": {\n\t\t\"id\": 1,\n\t\t\"nome\": \"lab 1\"\n\t},\n\t\"infosPropriedade\": {\n\t\t\"nome\": \"Agrotis 1\",\n\t\t\"id\": 1\n\t},\n\t\"cnpj\": \"52.865.338/0001-00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/licencas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"licencas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deletar licenca",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/licencas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"licencas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
